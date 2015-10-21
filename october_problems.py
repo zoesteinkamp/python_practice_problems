@@ -42,4 +42,27 @@ def RunLength(str):
 RunLength(Input)
 
 
-# I did not have the time to finish this. s
+# I did not have the time to finish this.
+
+
+
+#Using the Python language, have the function Division(num1,num2) take both parameters being passed
+#and return the Greatest Common Factor. That is, return the greatest number that evenly goes into both numbers
+#with no remainder. For example: 12 and 16 both are divisible by 1, 2, and 4 so the output should be 4. The range
+#for both parameters will be from 1 to 10^3.
+def Division(num1,num2):
+    divis1 = []
+    divis2 = []
+    for i in range(1,num1):   # find all the numbers in num1 that its divisible by
+        if num1%i == 0:
+            divis1.append(i)
+    for x in range(1,num2):   # do the same for 2
+        if num2%x ==0:
+            divis2.append(x)
+    same = set(divis1).intersection(divis2)  #figure out which ones match
+    print(max(same)) # then give us the max of the two
+
+Division(36, 54)  #returns 18
+
+# This could obviously be shortend, but i love my solution, so simple and elegant and really easy to read.
+# Just probably really slow. 
