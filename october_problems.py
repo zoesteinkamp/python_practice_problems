@@ -65,4 +65,11 @@ def Division(num1,num2):
 Division(36, 54)  #returns 18
 
 # This could obviously be shortend, but i love my solution, so simple and elegant and really easy to read.
-# Just probably really slow. 
+# Just probably really slow.
+
+
+#Using the Python language, have the function BinaryConverter(str) return the decimal form of the binary
+#value. For example: if 101 is passed return 5, or if 1000 is passed return 8.
+
+def BinaryConverter(str):
+    int('0b'+str, 2)
